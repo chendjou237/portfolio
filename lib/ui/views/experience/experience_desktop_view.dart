@@ -66,7 +66,7 @@ class ExperienceDesktopView extends HookWidget {
       BuildContext context, ScrollController _scrollController) {
     return ExperienceTree(
       headTitle:
-          '${DateTimeUtils().monthsList[DateTime.now().month - 1]} - ${DateTime.now().year}',
+          '${DateTimeUtils().monthsList[DateTime.now().month]} - ${DateTime.now().year}',
       tailTitle: 'May - 2020',
       experienceData: PersonalDetails.experienceList,
       scrollController: _scrollController,

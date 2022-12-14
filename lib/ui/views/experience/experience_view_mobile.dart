@@ -44,7 +44,7 @@ class ExperienceMobileView extends StatelessWidget {
                     physics: const BouncingScrollPhysics(),
                     tabs: [
                       for (int i = 0;
-                          i < PersonalDetails.experienceList.length ; 
+                          i < PersonalDetails.experienceList.length;
                           i++)
                         Tab(
                           child: Text(PersonalDetails.experienceList[i].title),
@@ -55,7 +55,7 @@ class ExperienceMobileView extends StatelessWidget {
                       physics: const BouncingScrollPhysics(),
                       children: [
                         for (int i = 0;
-                            i < PersonalDetails.experienceList.length ;
+                            i < PersonalDetails.experienceList.length;
                             i++)
                           Container(
                             child: SingleChildScrollView(
