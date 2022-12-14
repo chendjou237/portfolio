@@ -79,14 +79,14 @@ class MainView extends HookWidget {
                         ? uiHelpers.primaryColor!
                         : Colors.white,
                     maxWidth: 250,
-                    avatarImg: const AssetImage('assets/images/s.jpg'),
+                    avatarImg: const AssetImage('assets/images/icon.png'),
                     topPadding: 50,
                     body: model.child,
                     title: 'Shashi Kumar',
                     items: model.collapsibleItem),
                 tablet: CollapsibleSidebar(
                     maxWidth: 250,
-                    avatarImg: const AssetImage('assets/images/s.jpg'),
+                    avatarImg: const AssetImage('assets/images/icon.png'),
                     topPadding: 50,
                     body: model.child,
                     title: 'Shashi Kumar',

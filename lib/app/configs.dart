@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 
 import '../core/models/project.dart';
 import '../core/models/skill_display.dart';
@@ -10,14 +12,13 @@ import 'icons.dart';
 //*Social Media Links
 mixin SocialLinks {
   static const String linkedinUrl =
-      'https://www.linkedin.com/in/shashi-kumar-58ab1b1a4/';
-  static const String mediumLink = 'https://medium.com/@ben75930';
-  static const String twitterLink = 'https://twitter.com/Shashi35744438';
-  static const String githubLink = 'https://github.com/shashiben';
+      'https://www.linkedin.com/in/honore-chendjou-chendjou-7b4ab820b/';
+  static const String mediumLink = 'https://medium.com/@chenxhenor';
+  static const String twitterLink = 'https://twitter.com/honore_chendjou';
+  static const String githubLink = 'https://github.com/chendjou237';
   static const String facebookLink = 'https://www.facebook.com/shashiben7997';
-  static const String instagramLink =
-      'https://www.instagram.com/shashikumar7997/';
-  static const String telegramLink = 'https://t.me/shashiben';
+  static const String instagramLink = 'https://www.instagram.com/your.dev237/';
+  static const String telegramLink = 'https://twitter.com/honore_chendjou';
 }
 
 //*System Defaults
@@ -28,15 +29,15 @@ mixin SystemProperties {
 
 //*Education Details
 mixin EducationDetails {
-  static const String collegeName = 'Sri Chaitanya Jr College';
-  static const String collegeTimeline = '2015 - 2017';
-  static const String schoolName = 'Cattamanchi Ramalinga Reddy High School';
+  static const String collegeName = 'Universite de yaounde 1';
+  static const String collegeTimeline = '2019 - 2020';
+  static const String schoolName = 'Honor Bilingual High School';
 
-  static const String schoolTimeline = '2014 - 2015';
-  static const String universityName = 'Sri Venkateswara University';
-  static const String universityTimeline = '2017 - 2021';
+  static const String schoolTimeline = '2012 - 2018';
+  static const String universityName = 'THE ICT UNIVERSITY';
+  static const String universityTimeline = '2020 - 2023';
 
-  static const String universityStream = 'Computer Science and Engineering';
+  static const String universityStream = 'Software engineering';
   static const String schoolStream = 'SSC';
   static const String collegeStream = 'Intermediate (MPC)';
 
@@ -66,14 +67,15 @@ mixin PersonalDetails {
         iconData: SkillDisplayIcons.databaseIcon)
   ];
   static const String resumeLink =
-      'https://drive.google.com/file/d/1zgGpQfz1sgvG-8eiCDXzmBIu59mJ7Jho/view?usp=sharing';
-  static const String whatsappLink = 'https://wa.me/7997217156';
+      'https://drive.google.com/file/d/12NeEXwTPSg9pSQDdEvq1We8o9KdXmR72/view?usp=share_link';
+  static const String whatsappLink = 'https://wa.me/237690596606';
   static const List<Technologies> techList = [
     Technologies(icon: TechnologiesIcon.reactJsIcon, name: 'React JS'),
     Technologies(icon: TechnologiesIcon.javaIcon, name: 'Java'),
-    Technologies(icon: TechnologiesIcon.pythonIcon, name: 'Python')
+    Technologies(icon: TechnologiesIcon.pythonIcon, name: 'Python'),
+    Technologies(icon: Icons.flutter_dash, name: 'Flutter'),
   ];
-  static const String githubUserName = 'shashiben';
+  static const String githubUserName = 'chendjou237';
   static const String githubDataUrl =
       'https://api.github.com/users/$githubUserName/repos';
   static List<Project> projectsList = [
@@ -180,7 +182,7 @@ mixin PersonalDetails {
     'Java Developer',
     'Open Cv',
     'OOPS',
-    'C',
+    'C++',
     'Python',
     'Flask',
     'Problem Solving',
@@ -252,8 +254,32 @@ mixin PersonalDetails {
         'Implemented Video Broadcasting feature,Chat bot,Voice Search'
       ],
     ),
+    ExperienceTimeline(
+      tools: ['Firebase', 'DialogFlow', 'Agora', 'GCP', 'Node js', 'Mongo'],
+      timePeriod: 'May 2020 - July 2020',
+      title: 'Naaniz',
+      position: 'Developement Team Lead',
+      description: [
+        'Managing a team of 25 members, able to divide and assign works to them',
+        'Designed DB Schema and made the UI of the app responsive',
+        'Integrated Payment Gateway Integration (Razorpay)',
+        'Implemented Video Broadcasting feature,Chat bot,Voice Search'
+      ],
+    ),
+    ExperienceTimeline(
+      tools: ['Firebase', 'DialogFlow', 'Agora', 'GCP', 'Node js', 'Mongo'],
+      timePeriod: 'May 2020 - July 2020',
+      title: 'Naaniz',
+      position: 'Developement Team Lead',
+      description: [
+        'Managing a team of 25 members, able to divide and assign works to them',
+        'Designed DB Schema and made the UI of the app responsive',
+        'Integrated Payment Gateway Integration (Razorpay)',
+        'Implemented Video Broadcasting feature,Chat bot,Voice Search'
+      ],
+    ),
   ];
-  static const String email = 'kumarshashi5294@gmail.com';
+  static const String email = 'chenxhenor@gmail.com';
   static List<SkillModel> featuredSkills = [
     SkillModel(name: 'Mobile Application Developement', percent: 95),
     SkillModel(name: 'Web Developer', percent: 90),
@@ -261,9 +287,11 @@ mixin PersonalDetails {
     SkillModel(name: 'Backend Developer', percent: 89),
   ];
 
-  static const String userName = 'Shashi Kumar';
+  static const String userName = 'Chendjou Honore';
   static const String shortIntro =
-      'I’m Shashi Kumar and I’m a full stack developer, and I specialize in building efficient Flutter Applications that just work across all platforms and browsers. I care deeply about building interfaces that are usable and pleasant for the most number of people possible.And my main motto is whenever building any application is to always build pixel perfect high performant applications that provide user with a rich experience.';
+      'I am a solution mobile and full stack Developer, lifelong learner, and adventurer with a professional background in software business strategy';
   static const String intro =
-      "I started my career into developement as android developer.First I built android applications in native android.Later I heared about flutter which helps in building cross platform applications.After gaining experience in flutter,I applied to internships,through which I was able to learn communication skills and code architectures.After that I worked as a freelancer and gained experience of how to build applications in production level.Presently I'm focusing on web developement.I learnt MERN Stack.And working projects on it.";
+  '''I am a solution mobile and full stack Developer, lifelong learner, and adventurer with a professional background in software business strategy. I enjoy development because of the satisfaction I get by overcoming challenges. I am motivated by the opportunity that software provides to positively impact an individual's life and the world as a whole.
+Skills & Technologies:
+Flutter | Vscode | Firebase | UIKit | Playstore Connect | Networking | RESTful APIs | JSON parsing | Postman | User Notifications | Responsive layout | Debugging | CI/CD | Git | Github | Slack/Jira | MVVM & MVC | Object-oriented Programming | Functional Programming | cloud Analytics | REACT | EXPRESS | NODE | MONGODB | POSTGRES SQL | MYSQL | Firestore''';
 }

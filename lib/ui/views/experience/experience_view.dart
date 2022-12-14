@@ -23,6 +23,7 @@ class ExperienceView extends StatelessWidget {
                 uiHelpers: uiHelpers,
                 model: model,
               ),
-            ));
+            )
+            );
   }
 }
