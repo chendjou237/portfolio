@@ -43,7 +43,7 @@ class HomeDesktopView extends StatelessWidget {
                           color: uiHelpers!.textPrimaryColor,
                         ),
                         Text(
-                          'Shashi Kumar',
+                          'Chendjou Honore',
                           style: uiHelpers!.title,
                         )
                       ],
