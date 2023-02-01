@@ -54,30 +54,34 @@ class ProjectWidget extends StatelessWidget {
                       Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          if (project.websiteLink == null) const SizedBox() else IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.websiteIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.websiteLink!),
-                                ),
-                          if (project.githubLink == null) const SizedBox() else IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.githubIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.githubLink!),
-                                ),
-                          if (project.playstoreLink == null) const SizedBox() else IconButton(
-                                  icon: Icon(
-                                    ProjectIcons.playstoreIcon,
-                                    color: uiHelpers.primaryColor,
-                                  ),
-                                  onPressed: () => _urlLauncherService
-                                      .launchUrl(project.playstoreLink!),
-                                ),
+                          // ! please when you got time, add the project.websiteLink and project.githubLink
+                          // if (project.websiteLink == null) const SizedBox() else IconButton(
+                          //         icon: Icon(
+                          //           ProjectIcons.websiteIcon,
+                          //           color: uiHelpers.primaryColor,
+                          //         ),
+                          //         onPressed: () => _urlLauncherService
+                          //             .launchUrl(project.websiteLink!),
+                          //       ),
+                          // if (project.githubLink == null) const SizedBox() else IconButton(
+                          //         icon: Icon(
+                          //           ProjectIcons.githubIcon,
+                          //           color: uiHelpers.primaryColor,
+                          //         ),
+                          //         onPressed: () => _urlLauncherService
+                          //             .launchUrl(project.githubLink!),
+                          //       ),
+                          if (project.playstoreLink == null)
+                            const SizedBox()
+                          else
+                            IconButton(
+                              icon: Icon(
+                                ProjectIcons.playstoreIcon,
+                                color: uiHelpers.primaryColor,
+                              ),
+                              onPressed: () => _urlLauncherService
+                                  .launchUrl(project.playstoreLink!),
+                            ),
                         ],
                       ),
                     ],
